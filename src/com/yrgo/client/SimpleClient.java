@@ -35,7 +35,6 @@ public class SimpleClient {
         actions.add(action2);
 
         try{
-            System.out.println("Timestamp: " + newCall.getTimeAndDate());
             callService.recordCall("CS03939", newCall, actions);
         }catch (CustomerNotFoundException e){
             System.out.println("That customer doesn't exist");
