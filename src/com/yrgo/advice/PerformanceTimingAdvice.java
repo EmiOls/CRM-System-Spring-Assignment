@@ -2,8 +2,9 @@ package com.yrgo.advice;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.aop.framework.AopProxyUtils;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class PerformanceTimingAdvice {
 
     public Object performTimingMeasurement(ProceedingJoinPoint method) throws Throwable {

@@ -6,13 +6,18 @@ import java.util.List;
 import java.util.Set;
 
 import com.yrgo.domain.Action;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+
+@Service
+@Transactional
 public class DiaryManagementServiceMockImpl implements DiaryManagementService {
 	
-	private Set<Action> allActions;
+	private final Set<Action> allActions;
 
 	public DiaryManagementServiceMockImpl() {
-		this.allActions = new HashSet<Action>();
+		this.allActions = new HashSet<>();
 	}
 
 	@Override

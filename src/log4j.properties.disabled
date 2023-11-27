@@ -10,6 +10,6 @@ log4j.rootLogger=FATAL, mainlog
 # Uncomment the appropriate line to enable logging for your particular tx manager
 
 #log4j.logger.org.springframework.jdbc.datasource.DataSourceTransactionManager=DEBUG
-log4j.logger.org.springframework.orm.hibernate3.HibernateTransactionManager=DEBUG
-#log4j.logger.org.springframework.orm.jpa.JpaTransactionManager=DEBUG
+#log4j.logger.org.springframework.orm.hibernate3.HibernateTransactionManager=DEBUG
+log4j.logger.org.springframework.orm.jpa.JpaTransactionManager=DEBUG
 
