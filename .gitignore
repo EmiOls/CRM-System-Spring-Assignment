@@ -1,6 +1,5 @@
 # Database files
-database.dat.properties
-database.dat.script
+database.dat.*
 
 # Miscellaneous
 *.java.hsp

@@ -16,7 +16,7 @@
     </bean>
 
     <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+          class="org.springframework.orm.jpa.JpaTransactionManager"
           autowire="byType" />
 
     <bean id="jdbcTemplate"
@@ -30,6 +30,12 @@
             <list>
                 <value>com.yrgo.domain</value>
             </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">create</prop>
+            </props>
         </property>
     </bean>
 
