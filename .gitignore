@@ -1,5 +1,6 @@
 # Database files
 database.dat.*
+databaseTESTING.dat.*
 
 # Miscellaneous
 *.java.hsp
